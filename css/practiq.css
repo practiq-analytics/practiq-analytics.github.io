@@ -10,9 +10,13 @@
   src: url('/fonts/LatoOFL/Lato-Reg.ttf') format('truetype');
 }
 
-body {
-    background-color: #e9ecef;
+
+html, body {
+    height: 100%;
+    margin: 0;
+    /*background-color: #e9ecef;*/
 }
+
 
 .container {
     width: auto;
@@ -167,10 +171,16 @@ h5 {
     width: 1em;
 }
 
-.footer {
-    height: 40px; /* Set the fixed height of the footer here */
-    padding-left: 20px;
-    padding-right: 20px;
+.landing-page-content {
+    padding: 20px;
+    min-height: 100%;
+    margin: 0 auto -50px; /* footer height */
+    background-color: #e9ecef;
+}
+
+.footer { 
+    line-height: 50px;/* Set the fixed height of the footer here */
+    padding: 0 20px;
     font-family: 'Lato-Light';
     text-align: center;
     font-size: 0.6em;
