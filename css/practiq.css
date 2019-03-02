@@ -4,11 +4,14 @@
   src: url('/fonts/LatoOFL/Lato-Lig.ttf') format('truetype');
 }
 
-
 @font-face
 {
   font-family: 'Lato';
   src: url('/fonts/LatoOFL/Lato-Reg.ttf') format('truetype');
+}
+
+body {
+    background-color: #e9ecef;
 }
 
 .container {
@@ -17,7 +20,6 @@
     padding: 0 15px;
 }
 
-
 h1 {
     font-size: 5em;
     font-family: 'Lato-Light';
@@ -25,9 +27,17 @@ h1 {
     margin: 0;
 }
 
-.vs-block {
-    margin-top: 1em;
+h3 {
+    font-size: 2em;
+    font-family: 'Lato-Light';
+    margin: 0;
 }
+
+.jumbotron-block {
+    padding-left: 50px;
+}
+
+
 @media screen and (max-width: 550px) {
     .fb-block-desktop {
         margin-top: 1em;
@@ -57,7 +67,7 @@ h1 {
         font-size: 1.85em !important;
         width: 100%;
     }
-    .victory h3 {
+    .h3 {
         font-family: 'Lato-Light';
         margin: -0.5em 0.2em 0.7em !important;
         font-size: 3em;
@@ -108,7 +118,7 @@ h1 {
         display: block;
     }
 
-    .victory h3 {
+    .h3 {
         font-size: 2.2em !important;
     }
 }
@@ -141,9 +151,6 @@ h5 {
 
 .signiture {
     font-family: 'Lato-Light';
-    margin: -0.15em 0.2em 3em 1.3em;
-    font-size: 3em;
-    width: 8em;
     font-weight: 300;
 }
 
@@ -161,10 +168,9 @@ h5 {
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
-    width: 70%;
-    height: 60px; /* Set the fixed height of the footer here */
+    height: 40px; /* Set the fixed height of the footer here */
+    padding-left: 20px;
+    padding-right: 20px;
     font-family: 'Lato-Light';
     text-align: center;
     font-size: 0.6em;
